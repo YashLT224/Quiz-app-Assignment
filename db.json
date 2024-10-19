@@ -1,0 +1,287 @@
+{
+  "quiz": [
+    {
+      "id": 1,
+      "questionId": 1,
+      "question": "What is the largest planet in our solar system?",
+      "options": [
+        "Earth",
+        "Mars",
+        "Jupiter",
+        "Venus"
+      ],
+      "correctOption": "Jupiter"
+    },
+    {
+      "id": 2,
+      "questionId": 2,
+      "question": "Who wrote the famous novel '1984'?",
+      "options": [
+        "George Orwell",
+        "J.K. Rowling",
+        "Mark Twain",
+        "F. Scott Fitzgerald"
+      ],
+      "correctOption": "George Orwell"
+    },
+    {
+      "id": 3,
+      "questionId": 3,
+      "question": "Which element is represented by the chemical symbol 'O'?",
+      "options": [
+        "Oxygen",
+        "Gold",
+        "Hydrogen",
+        "Silver"
+      ],
+      "correctOption": "Oxygen"
+    },
+    {
+      "id": 4,
+      "questionId": 4,
+      "question": "What is the capital city of Japan?",
+      "options": [
+        "Tokyo",
+        "Kyoto",
+        "Seoul",
+        "Beijing"
+      ],
+      "correctOption": "Tokyo"
+    },
+    {
+      "id": 5,
+      "questionId": 5,
+      "question": "What is the value of Pi (π) up to two decimal places?",
+      "options": [
+        "3.12",
+        "3.14",
+        "3.16",
+        "3.18"
+      ],
+      "correctOption": "3.14"
+    }
+  ],
+  "responses": [
+    {
+      "id": "b387",
+      "questionId": 1,
+      "selectedOption": "Mars",
+      "timeTaken": 30
+    },
+    {
+      "id": "5b5c",
+      "questionId": 1,
+      "selectedOption": "Mars",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "a619",
+      "questionId": 2,
+      "selectedOption": "George Orwell",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "aa2e",
+      "questionId": 3,
+      "selectedOption": "Oxygen",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "7290",
+      "questionId": 4,
+      "selectedOption": "Kyoto",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "116c",
+      "questionId": 5,
+      "selectedOption": "3.14",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "c212",
+      "questionId": 1,
+      "selectedOption": "Jupiter",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "88ac",
+      "questionId": 2,
+      "selectedOption": "George Orwell",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "e286",
+      "questionId": 3,
+      "selectedOption": "Oxygen",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "4301",
+      "questionId": 4,
+      "selectedOption": "Kyoto",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "244f",
+      "questionId": 5,
+      "selectedOption": "3.14",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "9b1a",
+      "questionId": 1,
+      "selectedOption": "Jupiter",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "fb6c",
+      "questionId": 2,
+      "selectedOption": "J.K. Rowling",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "2d73",
+      "questionId": 3,
+      "selectedOption": "Oxygen",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "01b0",
+      "questionId": 4,
+      "selectedOption": "Seoul",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "b736",
+      "questionId": 5,
+      "selectedOption": "3.14",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "99c3",
+      "questionId": 1,
+      "selectedOption": "Earth",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "3940",
+      "questionId": 2,
+      "selectedOption": "J.K. Rowling",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "8c69",
+      "questionId": 3,
+      "selectedOption": "Gold",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "1cc5",
+      "questionId": 4,
+      "selectedOption": "Kyoto",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "8876",
+      "questionId": 5,
+      "selectedOption": "3.14",
+      "isCorrect": true,
+      "timeTaken": 30
+    },
+    {
+      "id": "e613",
+      "questionId": 1,
+      "selectedOption": "Mars",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "37ed",
+      "questionId": 2,
+      "selectedOption": "J.K. Rowling",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "598e",
+      "questionId": 3,
+      "selectedOption": "Silver",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "2b4a",
+      "questionId": 4,
+      "selectedOption": "Seoul",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "c1c6",
+      "questionId": 5,
+      "selectedOption": "3.16",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "c581",
+      "questionId": 1,
+      "selectedOption": "Mars",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "b64a",
+      "questionId": 2,
+      "selectedOption": "J.K. Rowling",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "03e9",
+      "questionId": 3,
+      "selectedOption": "Gold",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "8426",
+      "questionId": 4,
+      "selectedOption": "Kyoto",
+      "isCorrect": false,
+      "timeTaken": 30
+    },
+    {
+      "id": "d826",
+      "questionId": 5,
+      "selectedOption": "3.14",
+      "isCorrect": true,
+      "timeTaken": 30
+    }
+  ],
+  "score": {
+    "totalQuestions": 5,
+    "correctAnswers": 0,
+    "incorrectAnswers": 0
+  }
+}

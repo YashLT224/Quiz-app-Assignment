@@ -1,0 +1,169 @@
+/* Container styling for the question page */
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(180deg, #f0f5ff, #d4c4ff);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Progress circle header styling */
+.progress-header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.progress-circle {
+  width: 120px;
+  height: 120px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #eee;  /* Background color for the circle */
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 3.8;
+  stroke: #3bda75;  /* Green color for the progress */
+  stroke-linecap: round;
+  transition: stroke-dasharray 0.3s ease;
+}
+
+.progress-text {
+  fill: #333;
+  font-size: 0.5em;
+  text-anchor: middle;
+  dominant-baseline: middle;
+}
+
+/* Question text styling */
+.question-text {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Container for answer options */
+.options-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Individual option box styling */
+.option-box {
+  display: flex;
+  align-items: center;
+  background-color: #f7f7f7;
+  border: 1px solid #d3d3d3;
+  padding: 15px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.option-box:hover {
+  border-color: #ff3d3d;
+}
+
+/* Hide the default radio input */
+.option-box input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio button styling */
+.option-box label {
+  position: relative;
+  padding-left: 35px; /* Space for the custom radio */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.option-box label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  border: 2px solid #d3d3d3;
+  border-radius: 50%;
+  background-color: white;
+  transition: border-color 0.3s ease;
+}
+
+/* Green checkmark for selected option */
+.option-box.selected label::before {
+  border-color: #3bda75;
+  background-color: #eafff2;
+}
+.option-box.selected   {
+  border-color: #3bda75;
+  
+}
+
+.option-box.selected label::after {
+  content: "✔";
+  color: #3bda75;
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+}
+
+/* Styling for the 'Next' button */
+.next-button {
+  background-color: #ff3d3d;
+  color: white;
+  padding: 15px 50px;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  margin-top: 30px;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: #ff6666;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .progress-circle {
+    width: 80px;
+    height: 80px;
+  }
+
+  .option-box {
+    padding: 12px;
+  }
+
+  .next-button {
+    padding: 12px 40px;
+    font-size: 16px;
+  }
+}

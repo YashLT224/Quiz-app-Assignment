@@ -1,0 +1,83 @@
+/* Home page container styling */
+ 
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(180deg, #f0f5ff, #d4c4ff); /* Light gradient background */
+  }
+
+  .flexBox{
+      
+  }
+  
+  /* Logo styling */
+  .logo {
+    
+    top: 10px;
+    left: 20px;
+  }
+  
+  .logo img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Quiz circle styling */
+  .quiz-circle {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Slight shadow for 3D effect */
+  }
+  
+  .quiz-text {
+    font-size: 36px;
+    font-weight: bold;
+    color: #ff3d3d; /* Red color for the 'Quiz' text */
+    margin: 0;
+  }
+  
+  /* Start button styling */
+  .start-button {
+    margin-top: 30px;
+    padding: 15px 50px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #ff3d3d; /* Red button */
+    border: none;
+    border-radius: 30px; /* Rounded button */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .start-button:hover {
+    background-color: #ff6666; /* Lighter red on hover */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .quiz-circle {
+      width: 150px;
+      height: 150px;
+    }
+  
+    .quiz-text {
+      font-size: 28px;
+    }
+  
+    .start-button {
+      padding: 12px 40px;
+      font-size: 16px;
+    }
+  }
+  
