@@ -1,7 +1,4 @@
-Sure! Here's a sample `README.md` for your project:
-
----
-
+ 
 # Quiz Application
 
 A simple React-based quiz application that uses `json-server` as a mock API for managing quiz questions, responses, and scores. Users can take a quiz, submit their answers, and view the final results with a graphical representation of their score.
@@ -162,6 +159,4 @@ The project includes custom CSS for the quiz and results pages, including graphi
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
----
-
-Feel free to modify the content based on your specific needs! Let me know if you need further adjustments.
+ 
