@@ -4,58 +4,26 @@ import './report.css'; // Link to the CSS file
 
 const Report = () => {
   const navigate = useNavigate();
-  
+  const location = useLocation();
+  const { totalQuestions,correctAnswers } = location.state;
 const [result,setResult]=useState({correct:0, incorrect:0, percentage:0})
   useEffect(() => {
-    // Fetching data from mock API
-    const fetchReportData = async () => {
-      try {
-        const response = await fetch('http://localhost:5001/responses', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-           
-          });
-
-        const data = await response.json();
-      let correct=0;
-       let total=data.length;
-       for(let i=0;i<data.length;i++){
-            if(data[i].isCorrect){
-                correct++; 
-            }
-       }
-
-       setResult({
-           correct:correct,
-           scorePercentage: Math.round((correct / total) * 100),
-           incorrect:total-correct
-       })
-      } catch (error) {
-        console.error('Error fetching report data:', error);
-      }
-    };
-
-    fetchReportData(); // Trigger the fetch when the component mounts
+ 
+    setResult({
+      correct:correctAnswers,
+      percentage: Math.round((correctAnswers / totalQuestions) * 100),
+      incorrect:totalQuestions-correctAnswers
+  })
+     
   }, []);
  
 
-  const handleRestart = async () => {
-    try {
-      // Send a request to clear the responses array
-      await fetch('http://localhost:5001/responses', {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify([]), // Replace the responses array with an empty array
-    });
+  const handleRestart =  () => {
+   
+     
       // Navigate back to the home page after clearing the responses
       navigate('/');
-    } catch (error) {
-      console.error('Error clearing responses:', error);
-    }
+     
   };
   
 

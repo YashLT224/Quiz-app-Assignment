@@ -12,27 +12,12 @@ const Question = () => {
   const handleAnswerClick = (option) => {
     setSelectedAnswer(option); // Handle answer selection
   };
-  const handleAnswerSubmit = async () => {
+  const handleAnswerSubmit =  () => {
     const currentQuestion = questions[currentQuestionIndex];
     const isCorrect = selectedAnswer === currentQuestion.correctOption;
-    try {
-      // Submit the selected answer to the server via API
-      const response = await fetch('http://localhost:5001/responses', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        questionId: currentQuestion.questionId,
-        selectedOption: selectedAnswer,
-        isCorrect:isCorrect,
-        timeTaken: 30
-      }),
-    });
-      const data = await response.json();
-
+    
       // Check if the response was correct
-      if (data.correct) {
+      if (isCorrect) {
         setCorrectAnswers(correctAnswers + 1);
       }
 
@@ -44,11 +29,7 @@ const Question = () => {
         // Finish the quiz and navigate to the report page
         navigate('/report', { state: { correctAnswers, totalQuestions: questions.length } });
       }
-    } catch (error) {
-      console.error('Error submitting answer:', error);
-    }
-  };
- 
+    }   
 const calculateProgress = () => {
     return ((currentQuestionIndex + 1) / questions.length) * 100;
   };

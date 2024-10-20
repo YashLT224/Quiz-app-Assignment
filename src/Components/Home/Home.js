@@ -6,10 +6,10 @@ const Home = () => {
   const navigate = useNavigate();
 
   const startQuiz = async () => {
-    const response = await fetch('http://localhost:5001/quiz'); // Fetch quiz questions
+    const response = await fetch('https://076561ff-b563-4c81-ab13-0e052f2b595b.mock.pstmn.io/'); // Fetch quiz questions
     const data = await response.json();
 
-    navigate('/quiz', { state: { questions: data } }); // Pass questions via navigate state
+    navigate('/quiz', { state: { questions: data.quiz } }); // Pass questions via navigate state
   };
   return (
       <>
